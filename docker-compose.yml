@@ -1,0 +1,6 @@
+version: '3'
+services:
+  php-fpm:
+    build: .
+    volumes:
+      - $PWD:/code
