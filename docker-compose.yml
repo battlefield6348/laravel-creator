@@ -1,6 +1,7 @@
 version: '3'
 services:
-  php-fpm:
-    build: .
+  composer:
+    image: composer
     volumes:
-      - $PWD:/code
+      - /$PWD:/app
+    command: composer create-project laravel/laravel project-nnnn

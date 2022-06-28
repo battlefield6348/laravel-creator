@@ -3,20 +3,20 @@
 ## 環境需求
 
 - Docker
+- docker-compose
 
 ## 使用方法
 
-- 啟動 Docker
+- 修改 docker-compose 中的 `[project-name]`
 
-    `$ docker-compose up -d --build`
+- 啟動 Docker，自動建立專案
 
-- 進入 Container
+    `$ docker-compose up -d`
 
-    `$ docker exec [container_name] bash`
+- 查看專案建立情況
 
-- 開啟專案
+    `$ docker-compose logs -f`
 
-    ```
-    // Container 內
-    # composer create-project laravel/laravel [project_name]
-    ```
+- 關閉 Docker
+  
+    `$ docker-compose down`
